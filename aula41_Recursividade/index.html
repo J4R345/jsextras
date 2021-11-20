@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividade</title>
+   
+   <style>
+        #quad{
+            border: 1px solid #000;
+            background-color: #f00;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+
+        }
+    </style>
+</head>
+<body>
+   
+   <div id="quad"></div>
+    
+   <button id="btnPara">Parar</button>
+  
+  <script>
+        
+           
+            var obj=document.getElementById("quad");
+            var ang=0;
+            var anima;
+        
+            function gira(){
+                
+                obj.style.backgroundColor="#f00";
+                obj.style.transform="rotate("+ang+"deg)";
+                ang++;
+                
+                if(ang>360){
+                    ang=0;
+                }
+                
+                anima=requestAnimationFrame(gira);
+            } 
+
+        function parar(){
+
+                obj.style.backgroundColor="#ff0";
+                cancelAnimationFrame(anima);
+        }
+
+        gira();
+
+        obj.addEventListener("click", gira)
+        document.getElementById("btnPara").addEventListener("click",parar)
+
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Colaboradores</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <script src="calcularIdade.js"></script>
+
+    <script src="script.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+   <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+   <script src="firebase.js"></script>
+  <!-- 
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script> --> 
+
+</head>
+
+<body>
+
+    <section>
+
+        <h1 id="alterar">Colaboradores</h1>
+        
+        <div id="photo">
+        <img src="imgs/base.png" alt="foto">
+        </div>
+      
+        <input type="radio" name="empresa" id="Se"> <label for="Se">Serrana</label> 
+        <input type="radio" name="empresa" id="Sp" checked> <label for="Sp">Santa Paula</label> 
+
+       
+        <div id="dados"> 
+        
+        <label for="Matricula">Matricula:</label><input type="text" maxlength="4" id="matr" class="texres" placeholder="Digite a Matrícula"> <br>
+        <label for="nome" >Nome:</label><input type="text" id="nome" class="texres" placeholder="Nome" > <br>
+        <label for="funcao" >Função:</label><input type="text" id="funcao" class="texres" placeholder="Função"><br>
+        <label for="nascimento" >Nascimento:</label><input type="text" id="nasc" class="texres" placeholder="Data de Nascimento"> <br>
+        <label for="Idade">Idade:</label><input type="text" id="idade" class="texres" placeholder="Idade"> <br>
+        <label for="admissao">Admissão:</label><input type="text" id="admissao" class="texres" placeholder="Data da Admissão"> <br>
+        <label for="Tempo">Tempo:</label><input type="text" id="tempo" class="texres" placeholder="Tempo Na Empresa"> <br>
+        <label for="fone">Telefone:</label><input type="text" id="fone" class="texres" placeholder="Telefone Cadastrado"> <br>
+
+       </div>
+
+      <div id="botoes">
+        <button id="btnDel">Excluir</button>
+        <button id="btnUpdate">Atualizar</button>
+        <button id="btnSave">Salvar</button>
+       </div> 
+       
+    </section>
+    
+</body>
+
+</html>

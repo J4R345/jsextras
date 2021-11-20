@@ -1,0 +1,86 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+    border: none;
+    
+}
+
+body{
+
+    background-color: grey;
+    text-align: center;
+    
+}
+section{
+
+    display: inline-table;
+   
+    margin-top: 1vh;
+    text-align: center;
+    color: white;
+
+    align-items: center;
+    padding: 5px;
+    /*border: 1px solid rgba(0, 0, 0, 0.582);*/
+    box-shadow: 1px 2px 5px 7px rgba(255, 255, 255, 0.226);
+}
+   
+
+img{
+    height: 200px;
+    width: 170px;
+    border: 1px solid #cac4c4;
+}
+
+#botoes{
+
+    display: none;
+    font-weight: 200;
+    padding: 2px;
+
+}
+
+button{
+    background-color: rgb(90, 89, 89);
+    padding: 4px;
+    border-radius: 5px;
+}
+#btnDel:hover {
+    background-color: red;
+}
+
+#btnUpdate:hover {
+    background-color: green;
+}
+
+#btnSave:hover {
+    background-color:darkslategray;
+}
+
+h1{
+    padding: 5px;
+    color: white;
+
+}
+
+#dados{
+    
+    padding: 2px;
+    text-align:right;
+   
+}
+
+.texres{
+
+    min-width: 205px;
+
+}
+input{
+    padding-left: 3px;
+  
+}
+

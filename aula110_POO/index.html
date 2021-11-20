@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO JavaScript</title>
+    <script>
+        
+        // criando a classe carro
+        class Carro {
+
+            // Metodo Construtor
+            constructor(marca,modelo,cor) {
+
+                this.marca=marca;
+                this.modelo=modelo;
+                this.cor = cor;
+                this.ligado = true;
+                this.km=0;
+                this.comb='Gasolina';
+              
+            }
+
+            //Metodos <|> Funcões
+
+            info(){
+                
+                console.log(`Marca.......: ${this.marca}`);
+                console.log(`Modelo......: ${this.modelo}`);
+                console.log(`Cor.........: ${this.cor}`);
+                console.log(`Km..........: ${this.km}`);
+                console.log(`ligado......: ${this.ligado ?'Sim': 'Não'}`);
+                console.log(`Combustivel.: ${this.comb}`);
+                console.log('----------------------')
+
+            }
+
+            ligar(){
+                this.ligado=true;
+            }
+
+            desligar (){
+                this.ligado=false;
+            }
+
+            ligaDesliga(ld){
+                this.ligado=ld
+            }
+
+        }
+
+        // Instanciando (criando) os carros
+
+        let c1 = new Carro ('Honda','Não Sei','Vermelho')
+        let c2 = new Carro ('Volkswagen', 'Golf','Preto')
+        
+        
+        c1.cor='Red';
+
+        c1.ligaDesliga(false);
+
+        c1.info();
+        c2.info();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

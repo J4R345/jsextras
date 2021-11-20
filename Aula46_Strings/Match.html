@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Match</title>
+
+    
+</head>
+<body>
+    
+    <p id="txt"> CFB Cursos - Curso de Javascript - aula 46 do curso de javascript</p>
+   
+   <script>
+
+       /*
+       Modificadore:
+       i > ignora o caseSensitive
+       g > Busca mais de uma palavra se estiver repetidas na frase da busca
+       m > 
+       */
+
+        let texto = document.getElementById('txt').innerHTML;
+        
+        let res = texto.match(/Curso/ig);
+
+        document.write(res + " : " +res.length +'<br>');
+
+        document.write(res[0]); 
+
+
+
+    </script>
+</body>
+</html>

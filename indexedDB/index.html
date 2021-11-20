@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexedDB</title>
+</head>
+<body>
+
+    <div>
+
+        <form id="locationForm">
+
+            <p>
+                <label for="inputlat">Latitude</label>
+                <input type="number" name="latitude" id="inputLat">
+            </p>
+
+            <p>
+                <label for="inputlog">Longitude</label>
+                <input type="number" name="longitude" id="inputLog">
+            </p>
+
+            <p>
+                <label for="inputCity">Cidade</label>
+                <input type="text" name="city" id="inputCity">
+            </p>
+
+            <p>
+                
+                <input type="submit" value="Save">
+            </p>
+
+        </form>
+
+        <p>Database status: <span id="output-db"> </span> </p>
+
+        <UL id="data-list"></UL>
+
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

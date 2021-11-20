@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando atributos tags html</title>
+</head>
+<style>
+
+</style>
+<script>
+
+    
+
+    function inicia(){
+
+        document.getElementById('btnDestaque').addEventListener('click', function(){
+        var num=document.getElementById('fnum').value;
+        var p=document.getElementsByTagName('p');
+        for(var i=0;i<p.length;i++){
+            p[i].removeAttribute('style');
+        }
+        var atbto=document.createAttribute('style');
+        atbto.value='color:#f00; font-weight:bold;';
+        p[num-1].setAttributeNode(atbto);
+    })
+
+    }
+
+    window.addEventListener('load',inicia)
+
+
+</script>
+<body>
+    
+    <p>Digite o número da linha para Alterar</p>
+    <input type="text" id="fnum"> 
+    <button id="btnDestaque">Destacar</button><br>
+    
+    <p>Curso de JavaScript</p>
+    <p>Curso de HTML/HTML5</p>
+    <p>Curso de CSS3</p>
+    <p>Curso de PHT/MySQL</p>
+    <p>Curso de C++</p>
+    <p>Curso de Phtoshop</p>
+    <p>Curso de Unit/C#</p>
+    <p>Curso de Flash</p>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings IndexOf</title>
+</head>
+<body>
+    
+    <p id="txt"> CFB Cursos - Curso de Javascript - aula 46 do curso de javascript</p>
+   
+   <script>
+
+       /*
+       IndexOf:
+       Retorna a posição inicial da primeira string da busca encontrada
+       Não encontrado retorna -1
+       
+       LastIndexOf:
+       Retorna a posição incial da ultima string da busca encontrada
+       */
+
+        let texto = document.getElementById('txt').innerHTML;
+        
+        /*let res = texto.indexOf('j');
+
+        //document.write(res + " : " +res.length +'<br>');
+
+        document.write(res);
+        */
+        
+        /*
+        Slice e Substr:
+        Retorna uma parte de string indicando nos paramentros
+        a posiçao inicial e o total de caracteres
+
+        Split:
+        Quebra o texto indicando um delimitador como parametro
+        retorna um array com o resultado
+        res[1]
+
+        Usa-se barra invertida para imprimir caracteres 
+        reservados\especiais (\*)
+        \n: quebra de linha
+
+        */
+
+        let res = texto.slice(5,10);
+
+        document.write(res);
+
+
+
+    </script>
+</body>
+</html>

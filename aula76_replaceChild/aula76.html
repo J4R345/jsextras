@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replaceChild</title>
+</head>
+
+<script>
+    
+    function inicia(){
+
+        var novoH1=document.createElement('h1');
+        var listaCursos=document.getElementById('cfbcursos');
+        var antigoP=listaCursos.childNodes[5];
+        var txtH1=document.createTextNode(antigoP.innerHTML);
+        novoH1.appendChild(txtH1);
+        listaCursos.replaceChild(novoH1,antigoP);
+
+    }
+
+    window.addEventListener('load',inicia)
+
+</script>
+<body>
+    
+    <div id="cfbcursos">
+
+    <p>Curso de JavaScript</p>
+    <p>Curso de HTML/HTML5</p>
+    <p>Curso de CSS3</p>
+    <p>Curso de PHT/MySQL</p>
+    <p>Curso de C++</p>
+    <p>Curso de Phtoshop</p>
+    <p>Curso de Unit/C#</p>
+    <p>Curso de Flash</p>
+
+    </div>
+    
+    
+
+</body>
+</html> 
