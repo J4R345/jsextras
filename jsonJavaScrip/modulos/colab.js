@@ -1,7 +1,8 @@
 
-   [ {
+   export let cobjs = [ 
+     {
       "ID": "11002424",
-      "Nome": "Java Script Json",
+      "Nome": "Java S",
       "Funcao": "Dev",
       "Nascimento": "02/11/1980",
       "Admissao": "17/06/2019",
@@ -14,5 +15,6 @@
       "Nascimento": "02/12/1980",
       "Admissao": "17/06/2000",
       "Telefone": "27000099663"
-    }]
+    }
+  ]
     

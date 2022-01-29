@@ -25,3 +25,4 @@ const media = numbers.reduce(avg)
 
 console.log("------ Reduce-Media --------")
 console.log(media)
+

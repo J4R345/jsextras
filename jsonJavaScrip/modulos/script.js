@@ -1,7 +1,14 @@
 // Converte CSV para Json OnLine
 // https://csvjson.com/csv2json
 
-fetch("./modulos/colab.json")
+
+import { cobjs } from "./colab.js"
+
+console.log(cobjs.filter((cobjs) => cobjs.ID === "11002424"))
+
+document.getElementById("debug").innerHTML = cobjs[0].Nome
+
+/*fetch("./modulos/colab.json")
 	.then((response) => {
 		return response.json()
 	})
@@ -14,3 +21,4 @@ fetch("./modulos/colab.json")
 
 		const nome = document.getElementById("debug").innerHTML = colaborador[0].Nome
 	})
+*/
