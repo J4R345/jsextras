@@ -58,4 +58,22 @@ function liquidificador({ b, p }) {
 
 const result = liquidificador(fruits)
 
+const brasil = {
+	populacao: "226.6 bilhos",
+	renda_per_capita: "6.796.86",
+	religiao: {
+		catolica: "64.6%",
+	},
+}
+const {
+	populacao,
+	religiao: { catolica },
+} = brasil
+
+console.log("---- Desturction Objeto Aninhado ------")
+
+console.log(populacao)
+console.log(catolica) // Informar a chave do objeto aninhado
+
 console.log("------- Final ----")
+
