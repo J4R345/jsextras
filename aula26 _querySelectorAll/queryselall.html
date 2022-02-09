@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuerySelectAll</title>
+
+    <style>
+        #myDIV {
+          border: 1px solid black;
+          margin: 5px;
+        }
+        </style>
+</head>
+<body>
+    <div id="myDIV">
+        <h2 class="example">Um título com class="example" dentro da div</h2>
+        <p class="example">Um elemento p com class="example" dentro de uma div.</p>
+        <p class="example">Mais um elemento p com class="example" dentro da div.</p>
+        <p>Um elemento p com class="example"<span class="example">span</span> em uma div.</p>
+      </div>
+      
+      <p>Clique no botão para adicionar uma cor de fundo a todos os elementos com class="example" dentro de DIV.</p>
+      
+      <button onclick="myFunction()">Experimente</button>
+      
+      <p><strong>Observação:</strong> O método querySelectorAll() não tem suporte no Internet Explorer 8 e em versões anteriores.</p>
+      
+      <script>
+
+      function myFunction() {
+        var x = document.getElementById("myDIV").querySelectorAll(".example");
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.backgroundColor = "red";
+        }
+      }
+
+      </script>
+</body>
+</html>
