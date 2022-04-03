@@ -6,7 +6,10 @@ const Notifyer = {
 		}
 	},
 	notify({ title, body, icon }) {
-		new Notification(title, { body: body, icon })
+		
+		return () => new Notification(title, 
+			{ body: body, 
+			  icon })
 	},
 }
 export { Notifyer }
