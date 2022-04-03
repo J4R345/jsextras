@@ -9,8 +9,8 @@ const App = {
 
 			Emitter.on("countdown-start", () => {
 				Notifyer.notify({
-					title: "Hora do Post",
-					body: "Crie algum conteudo ...",
+					title: "Hora de Postar",
+					body: "Poste Algum Conteudo ...",
 				})
 			})
 			Emitter.on("countdown-end", () => {
