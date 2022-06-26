@@ -4,7 +4,7 @@ function multiplica (num1, num2) {
     if (num1 == 0 || num2 == 0) {
         return 0
     }
-    // Caso base onde a execuçã para
+    // Caso base onde a execução para
     else if (num2 == 1) {
         return num1       
     }
