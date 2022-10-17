@@ -1,25 +1,39 @@
+
+'use strict'
+
+// Composição de funçoes
+
 /*
-Composição de Funçoes
+// Opção 01
+const trim = text => text.trim();
+const toUpperCase = text => text.toUpperCase();
+const split = separator => text => text.split(separator);
 
-Exemplo 01
-const gritar = texto =>  texto.toUpperCase()
-const enfatizar = texto => `${texto}!!!`
 
-const gritando = gritar( 'composto' )
-const enfatizando = enfatizar(gritando)
+// já já disseco essa função!
+const compose = (...fns) => value => 
+  fns.reduceRight((previousValue, fn) => 
+      fn(previousValue), value);
 
-console.log(enfatizando)
+// a função convert é composição de outras três funções
+const convert = compose(split(' '), toUpperCase, trim);
+const words = convert(' Calopsita do Agreste ');
+
+console.log(words); // 'CALOPSITA', 'DO', 'AGRESTE'
+
 */
-// Exemplo 02
-const gritar = (texto) => texto.toUpperCase()
-const enfatizar = (texto) => `${texto}!!!`
 
-const compor = (fun1, fun2, texto) => {
-	let res = fun1(texto)
-	res = fun2(res)
+// Opção 02
+const trim = text => text.trim();
+const toUpperCase = text => text.toUpperCase();
+const split = separator => text => text.split(separator);
 
-	return res
-}
-const resultado = compor(gritar, enfatizar, "o grito")
+const words = 
 
-console.log(resultado)
+  split(' ')( 
+    toUpperCase(
+      trim(' Calopsita do Agreste ')
+    )
+  );
+
+console.log(words); // ['CALOPSITA', 'DO', 'AGRESTE']

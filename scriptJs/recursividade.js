@@ -14,7 +14,7 @@ function multiplica (num1, num2) {
     }
 }
 
-var resultado = multiplica(1,1)
+var resultado = multiplica(2,4)
 
 console.log("---- Multiplicação -----");
 console.log(resultado)

@@ -1,19 +1,19 @@
 // Desconstrução (Destruction) em JavaScrip
 
 //Objeto
-let opcoes = {
+let options = {
 	title: "Book",
 	page: 200,
-	species: "scientific",
+	species: "Scientific",
 }
 // title = propriedade title
 // rest =  objeto com o resto das propriedades
 console.log("--------- Primeiro Exemplo ---------")
 
-let { title, ...rest } = opcoes // agora title e igual a "Book"
+let { title, ...rest } = options // agora title e igual a "Book"
 // E rest e igual a {page: 200, species: scientific}
 
-console.log(opcoes) // Retorna o Objeto Literal
+console.log(options) // Retorna o Objeto Literal
 
 console.log(rest.page) // 200
 
