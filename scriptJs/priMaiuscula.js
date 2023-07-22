@@ -4,7 +4,7 @@ const minhaFrase = "O freeCodeCamp é um recurso incrível";
 const palavras = minhaFrase.split(" ");
 
 for (let i = 0; i < palavras.length; i++) {
-  palavras[i] = palavras[i][0].toUpperCase() + palavras[i].substr(1);
+  palavras[i] = palavras[i][0].toUpperCase() + palavras[i].substring(1);
 }
 
 palavras.join(" ");

@@ -1,0 +1,15 @@
+{
+  "name": "geradordesenhas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Jarbas Souza",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^22.0.2"
+  }
+}
