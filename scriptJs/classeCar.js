@@ -1,7 +1,6 @@
 // criando a classe carro
 class Carro {
   // Metodo Construtor
-
   constructor(tpCarro, tpComb) {
     this.tipo = tpCarro;
     this.tipoComb = tpComb;
@@ -10,7 +9,6 @@ class Carro {
   }
 
   //Metodos <|> Funcões
-
   info() {
     console.log(`Qtde Combustivel..: ${this.qtdeComb}`);
     console.log(`ligado............: ${this.ligado ? "Sim" : "Não"}`);
@@ -75,7 +73,7 @@ let c2 = new CarroTransporte();
 
 console.log("- Carro Combate -----------");
 
-c1.ligado = false;
+c1.ligado = true;
 console.log(`Potencia do Tiro..: ${(c1.potTiro = 100)}`);
 c1.info();
 

@@ -1,7 +1,7 @@
-const numbers = [1, 2, 3, 4, 5, 6]
 
+const numbers = [1, 2, 3, 4, 5, 6]
 //Função para somar os numeros do array e adicionar o valor 100
-const sum = (total, el) => total + el
+const sum = (acc, num) => acc + num
 
 const total = numbers.reduce(sum, 0)
 

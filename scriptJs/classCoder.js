@@ -1,7 +1,8 @@
 
+
 class Car {
   constructor(marca, modelo, ano, combustivel) {
-    (this.marca = marca),
+      (this.marca = marca),
       (this.modelo = modelo),
       (this.ano = ano),
       (this.combustivel = combustivel);

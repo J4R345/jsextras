@@ -17,7 +17,7 @@ function somarDuracoes(duracao1, duracao2) {
     const minutos = Math.floor((somaSegundos % 3600) / 60);
     const segundos = somaSegundos % 60;
   
-    // Formatar a saída com zeros à esquerda para garantir dois dígitos em horas, minutos e segundos
+    // Format the output with zeros on the left to ensure two digits in hours, minutes and seconds
     const duracaoTotal = `${horas.toString().padStart(5, "0")}:${minutos.toString().padStart(2, "0")}:${segundos.toString().padStart(2, "0")}`;
   
     return duracaoTotal;

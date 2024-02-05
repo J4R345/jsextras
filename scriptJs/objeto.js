@@ -3,7 +3,7 @@ var pessoa = {
   nome: ["Bob", "Smith"],
   idade: 32,
   sexo: "masculino",
-  interesses: ["música", "esquiar"],
+  intereses: ["música", "esquiar"],
   bio: function () {
     console.log(
       this.nome[0] +
@@ -12,9 +12,9 @@ var pessoa = {
         " tem " +
         this.idade +
         " anos de idade. Ele gosta de " +
-        this.interesses[0] +
+        this.intereses[0] +
         " e " +
-        this.interesses[1] +
+        this.intereses[1] +
         "."
     );
   },
@@ -26,6 +26,6 @@ var pessoa = {
 pessoa.nome;
 pessoa.nome[0];
 pessoa.idade;
-pessoa.interesses[1];
+pessoa.intereses[1];
 pessoa.bio();
 pessoa.saudacao();
